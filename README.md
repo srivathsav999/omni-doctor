@@ -18,7 +18,7 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/omni-doctors.git
+git clone https://github.com/srivathsav999/omni-doctor.git
 cd omni-doctors
 npm install 
 ``` 
