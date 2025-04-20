@@ -20,4 +20,14 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/your-username/omni-doctors.git
 cd omni-doctors
-npm install
+npm install 
+``` 
+
+💻 Run the App
+Start the development server:
+
+```bash
+npm run dev
+```
+The app will usually be available at http://localhost:5173/ or similar depending on your environment.
+
