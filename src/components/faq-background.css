@@ -1,0 +1,12 @@
+/* 
+  FAQ Background Wrapper
+  This file only controls the background color of the FAQ section.
+  Developers can modify just this file to change the background color
+  without affecting any other styling.
+*/
+
+.faq-background-wrapper {
+  background-color: #e0f0ee; /* Light teal background */
+  padding: 40px 0;
+  width: 100%;
+}

@@ -1,0 +1,150 @@
+.whyChooseSection {
+    min-height: 90vh;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 2rem 2rem 3rem;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+
+
+  
+.subHeading {
+    color: #2B7A78;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.mainHeading {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #111;
+    margin-top: -6rem;
+}
+  
+.pathText {
+    color: #2a857b;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+  
+.chooseContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+  
+.chooseMedia {
+    flex: 1;
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+  
+.chooseVideo {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+  
+.chooseDetails {
+    flex: 1;
+    max-width: 45%;
+    text-align: left;
+    padding: 0 1rem;
+}
+  
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+  
+.statBox h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.3rem;
+}
+  
+.statBox p {
+    color: #888;
+    font-size: 1rem;
+}
+  
+.featureList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+  
+.featureList li {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+  
+.tickIcon {
+    color: #2a857b;
+    margin-right: 0.6rem;
+}
+  
+.appointmentBtn {
+    background: linear-gradient(to right, #2B7A78, #20615f);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(43, 122, 120, 0.2);
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.appointmentBtn:hover {
+    background-color: #246e67;
+}
+
+@media (max-width: 768px) {
+    .chooseContent {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .chooseContent {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

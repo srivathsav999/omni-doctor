@@ -1,0 +1,331 @@
+{
+  "appointments": [],
+  "doctors": [
+    {
+      "id": 1,
+      "name": " Sarah Chen",
+      "title": "MD, FACS",
+      "specialization": "Family Medicine",
+      "education": [
+        "Harvard Medical School, MD",
+        "Stanford University, Residency",
+        "Johns Hopkins, Fellowship"
+      ],
+      "experience": "15+ years",
+      "languages": ["English", "Mandarin", "French"],
+      "image": "/images/lady.jpg",
+      "rating": 4.9,
+      "reviews": 238,
+      "expertise": [
+        "Interventional Cardiology",
+        "Heart Disease Prevention",
+        "Cardiac Rehabilitation"
+      ],
+      "certifications": [
+        "American Board of Internal Medicine",
+        "National Board of Echocardiography"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 5:00 PM",
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "10:00 AM - 6:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 4:00 PM"
+      },
+      "bio": "Dr. Sarah Chen is a distinguished cardiologist with over 15 years of experience in treating complex cardiac conditions. She combines cutting-edge medical expertise with a compassionate, patient-centered approach to care."
+    },
+    {
+      "id": 2,
+      "name": "Michael Rodriguez",
+      "title": "MD, PhD",
+      "specialization": "Psychiatry",
+      "education": [
+        "Yale School of Medicine, MD",
+        "UCLA Medical Center, Residency",
+        "Mayo Clinic, Fellowship"
+      ],
+      "experience": "12+ years",
+      "languages": ["English", "Spanish"],
+      "image": "/images/men.jpg",
+      "rating": 4.8,
+      "reviews": 186,
+      "expertise": [
+        "Movement Disorders",
+        "Epilepsy Treatment",
+        "Neurological Rehabilitation"
+      ],
+      "certifications": [
+        "American Board of Psychiatry and Neurology",
+        "American Academy of Neurology"
+      ],
+      "availability": {
+        "monday": "10:00 AM - 6:00 PM",
+        "tuesday": "10:00 AM - 6:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Rodriguez specializes in complex neurological conditions with a particular focus on movement disorders and epilepsy. His research has been published in leading medical journals."
+    },
+    {
+      "id": 3,
+      "name": "Emily Patel",
+      "title": "MD, MPH",
+      "specialization": "Gynecology",
+      "education": [
+        "Johns Hopkins School of Medicine, MD",
+        "Boston Children's Hospital, Residency"
+      ],
+      "experience": "8+ years",
+      "languages": ["English", "Hindi", "Gujarati"],
+      "image": "/images/lady1.png",
+      "rating": 4.9,
+      "reviews": 312,
+      "expertise": [
+        "Pediatric Care",
+        "Developmental Pediatrics",
+        "Preventive Care"
+      ],
+      "certifications": [
+        "American Board of Pediatrics",
+        "Pediatric Advanced Life Support"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "10:00 AM - 6:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Patel is passionate about children's health and development. She takes a holistic approach to pediatric care, working closely with families to ensure optimal health outcomes."
+    },
+    {
+      "id": 4,
+      "name": "James Wilson",
+      "title": "MD, FAAD",
+      "specialization": "Psychology",
+      "education": [
+        "Stanford Medical School, MD",
+        "University of Michigan, Residency"
+      ],
+      "experience": "10+ years",
+      "languages": ["English"],
+      "image": "/images/men1.png",
+      "rating": 4.7,
+      "reviews": 156,
+      "expertise": [
+        "Medical Dermatology",
+        "Cosmetic Procedures",
+        "Skin Cancer Treatment"
+      ],
+      "certifications": [
+        "American Board of Dermatology",
+        "American Academy of Dermatology"
+      ],
+      "availability": {
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "10:00 AM - 6:00 PM"
+      },
+      "bio": "Dr. Wilson is a board-certified dermatologist specializing in both medical and cosmetic dermatology. He is known for his expertise in skin cancer prevention and treatment."
+    },
+    {
+      "id": 5,
+      "name": "Maria Santos",
+      "title": "MD, FACOG",
+      "specialization": "Family Medicine",
+      "education": [
+        "Columbia University College of Physicians, MD",
+        "Mount Sinai Hospital, Residency"
+      ],
+      "experience": "14+ years",
+      "languages": ["English", "Portuguese", "Spanish"],
+      "image": "images/lady2.jpg",
+      "rating": 4.9,
+      "reviews": 289,
+      "expertise": [
+        "High-Risk Pregnancy",
+        "Minimally Invasive Surgery",
+        "Women's Health"
+      ],
+      "certifications": [
+        "American Board of Obstetrics and Gynecology",
+        "Fellow of the American College of Obstetricians and Gynecologists"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 4:00 PM",
+        "tuesday": "9:00 AM - 4:00 PM",
+        "thursday": "10:00 AM - 6:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Santos brings extensive experience in women's health care, specializing in high-risk pregnancies and minimally invasive surgical procedures. She is dedicated to providing comprehensive care throughout all stages of a woman's life."
+    },
+    {
+    "id": 6,
+      "name": " Priyanka Roy",
+      "title": "MD, FACS",
+      "specialization": "Psychiatry",
+      "education": [
+        "Harvard Medical School, MD",
+        "Stanford University, Residency",
+        "Johns Hopkins, Fellowship"
+      ],
+      "experience": "15+ years",
+      "languages": ["English", "Mandarin", "French"],
+      "image": "/images/lady3.png",
+      "rating": 4.9,
+      "reviews": 238,
+      "expertise": [
+        "Interventional Cardiology",
+        "Heart Disease Prevention",
+        "Cardiac Rehabilitation"
+      ],
+      "certifications": [
+        "American Board of Internal Medicine",
+        "National Board of Echocardiography"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 5:00 PM",
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "10:00 AM - 6:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 4:00 PM"
+      },
+      "bio": "Dr. Sarah Chen is a distinguished cardiologist with over 15 years of experience in treating complex cardiac conditions. She combines cutting-edge medical expertise with a compassionate, patient-centered approach to care."
+    },
+    {
+      "id": 7,
+      "name": "Michael Rodriguez",
+      "title": "MD, PhD",
+      "specialization": "Gynecology",
+      "education": [
+        "Yale School of Medicine, MD",
+        "UCLA Medical Center, Residency",
+        "Mayo Clinic, Fellowship"
+      ],
+      "experience": "12+ years",
+      "languages": ["English", "Spanish"],
+      "image": "/images/men2.jpg",
+      "rating": 4.8,
+      "reviews": 186,
+      "expertise": [
+        "Movement Disorders",
+        "Epilepsy Treatment",
+        "Neurological Rehabilitation"
+      ],
+      "certifications": [
+        "American Board of Psychiatry and Neurology",
+        "American Academy of Neurology"
+      ],
+      "availability": {
+        "monday": "10:00 AM - 6:00 PM",
+        "tuesday": "10:00 AM - 6:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Rodriguez specializes in complex neurological conditions with a particular focus on movement disorders and epilepsy. His research has been published in leading medical journals."
+    },
+    {
+      "id": 8,
+      "name": "Emily Patel",
+      "title": "MD, MPH",
+      "specialization": "Psychology",
+      "education": [
+        "Johns Hopkins School of Medicine, MD",
+        "Boston Children's Hospital, Residency"
+      ],
+      "experience": "8+ years",
+      "languages": ["English", "Hindi", "Gujarati"],
+      "image": "/images/men3.jpg",
+      "rating": 4.9,
+      "reviews": 312,
+      "expertise": [
+        "Pediatric Care",
+        "Developmental Pediatrics",
+        "Preventive Care"
+      ],
+      "certifications": [
+        "American Board of Pediatrics",
+        "Pediatric Advanced Life Support"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "10:00 AM - 6:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Patel is passionate about children's health and development. She takes a holistic approach to pediatric care, working closely with families to ensure optimal health outcomes."
+    },
+    {
+      "id": 9,
+      "name": "James Wilson",
+      "title": "MD, FAAD",
+      "specialization": "Family Medicine",
+      "education": [
+        "Stanford Medical School, MD",
+        "University of Michigan, Residency"
+      ],
+      "experience": "10+ years",
+      "languages": ["English"],
+      "image": "/images/lady4.jpg",
+      "rating": 4.7,
+      "reviews": 156,
+      "expertise": [
+        "Medical Dermatology",
+        "Cosmetic Procedures",
+        "Skin Cancer Treatment"
+      ],
+      "certifications": [
+        "American Board of Dermatology",
+        "American Academy of Dermatology"
+      ],
+      "availability": {
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "10:00 AM - 6:00 PM"
+      },
+      "bio": "Dr. Wilson is a board-certified dermatologist specializing in both medical and cosmetic dermatology. He is known for his expertise in skin cancer prevention and treatment."
+    },
+    {
+      "id": 10,
+      "name": "Maria Santos",
+      "title": "MD, FACOG",
+      "specialization": "Psychiatry",
+      "education": [
+        "Columbia University College of Physicians, MD",
+        "Mount Sinai Hospital, Residency"
+      ],
+      "experience": "14+ years",
+      "languages": ["English", "Portuguese", "Spanish"],
+      "image": "/images/men4.png",
+      "rating": 4.9,
+      "reviews": 289,
+      "expertise": [
+        "High-Risk Pregnancy",
+        "Minimally Invasive Surgery",
+        "Women's Health"
+      ],
+      "certifications": [
+        "American Board of Obstetrics and Gynecology",
+        "Fellow of the American College of Obstetricians and Gynecologists"
+      ],
+      "availability": {
+        "monday": "9:00 AM - 4:00 PM",
+        "tuesday": "9:00 AM - 4:00 PM",
+        "thursday": "10:00 AM - 6:00 PM",
+        "friday": "9:00 AM - 3:00 PM"
+      },
+      "bio": "Dr. Santos brings extensive experience in women's health care, specializing in high-risk pregnancies and minimally invasive surgical procedures. She is dedicated to providing comprehensive care throughout all stages of a woman's life."
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "General Consultation",
+      "description": "Regular medical checkup and consultation"
+    },
+    {
+      "id": 2,
+      "name": "Specialized Care",
+      "description": "Specialized medical services and treatments"
+    }
+  ]
+}

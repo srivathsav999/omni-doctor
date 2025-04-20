@@ -1,0 +1,94 @@
+.faqContainer {
+    width: 100%;
+    max-width: 900px; /* Increased max-width */
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+  
+.faqSection {
+    width: 100%;
+    background-color: #f0f8f7; /* Light teal background for entire section */
+    padding: 80px 20px;
+    position: relative;
+}
+
+.faqLabel {
+    background-color: #2B7A78;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(43, 122, 120, 0.2);
+}
+  
+.faqItem {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+}
+  
+.active {
+    background-color: #2B7A78;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(43, 122, 120, 0.15);
+}
+  
+.faqQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px; /* Increased padding */
+    cursor: pointer;
+}
+  
+.faqNumber {
+    font-weight: bold;
+    font-size: 28px; /* Larger number */
+    margin-right: 15px;
+    width: 50px;
+}
+  
+.faqText {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px; /* Larger text */
+}
+  
+.faqToggle {
+    font-size: 28px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+  
+.active .faqToggle {
+    background-color: white;
+    color: black;
+}
+  
+.faqAnswer {
+    border-top: 1px solid #ccc;
+    padding: 20px 30px 25px 90px; /* More spacing */
+    font-size: 18px; /* Slightly larger answer text */
+    color: white;
+}

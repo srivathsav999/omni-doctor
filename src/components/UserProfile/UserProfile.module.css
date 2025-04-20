@@ -1,0 +1,655 @@
+.profileFormCenteredContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9f5f4 100%);
+  background-attachment: fixed;
+}
+
+/* Profile View Styles - Exactly matching the reference image */
+.profileViewContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  background: #f8f9fa;
+  gap: 2rem;
+}
+
+/* Left Card - Profile Basic Info */
+.profileBasicCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 276px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(230, 230, 250, 0.5);
+}
+
+.profileBasicCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profilePhoto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 15px rgba(42, 133, 123, 0.15);
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePhoto img,
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profilePhotoPlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.profileName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.profileName:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #2a857b, #64d8cb);
+  border-radius: 3px;
+}
+
+.profileStatRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.profileStatLabel {
+  color: #888;
+  font-weight: 400;
+}
+
+.profileStatValue {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Main Card - Personal Details */
+.profileDetailsCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 800px;
+  padding: 1.5rem 2rem;
+  border: 1px solid #e0e7ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profileDetailsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profileDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profileDetailsTitle {
+  color: #888;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.profileEditButton {
+  background: #2a857b;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 10px rgba(42, 133, 123, 0.2);
+}
+
+.profileEditButton:hover {
+  background: #236e66;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(42, 133, 123, 0.3);
+}
+
+.profileDetailsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.profileDetailItem {
+  margin-bottom: 1.25rem;
+}
+
+.profileDetailLabel {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.profileDetailValue {
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+}
+
+.profileLogout {
+  display: flex;
+  align-items: center;
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s;
+  background: rgba(220, 53, 69, 0.1);
+  width: fit-content;
+}
+
+.profileLogout:hover {
+  background: rgba(220, 53, 69, 0.2);
+}
+
+.profileLogout svg {
+  margin-right: 0.5rem;
+}
+
+/* Container for profile cards */
+.profileCardsContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Allergies Card */
+.profileAllergiesCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1100px;
+  padding: 1.5rem 2rem;
+  border: 1px solid #e0e7ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profileAllergiesCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profileAllergiesTitle {
+  color: #888;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.profileAllergiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.profileAllergyItem {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: 200px;
+  transition: all 0.2s;
+  border: 1px solid #e0e7ff;
+}
+
+.profileAllergyItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profileAllergyName {
+  font-weight: 500;
+  color: #333;
+}
+
+.profileAllergySeverity {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.severityLow {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.severityMedium {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.severityHigh {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.profileAddAllergy {
+  display: flex;
+  align-items: center;
+  color: #2a857b;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s;
+  background: rgba(42, 133, 123, 0.1);
+  width: fit-content;
+}
+
+.profileAddAllergy:hover {
+  background: rgba(42, 133, 123, 0.2);
+}
+
+.profileAddAllergy svg {
+  margin-right: 0.5rem;
+}
+
+/* Form styles */
+.profileFormCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(42, 133, 123, 0.15);
+  width: 100%;
+  max-width: 800px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(230, 230, 250, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profileFormCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(42, 133, 123, 0.2);
+}
+
+.profileFormTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #2a857b;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.profileFormTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2a857b, #64d8cb);
+  border-radius: 2px;
+}
+
+.healthForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 1rem 1.2rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.formGroup input::placeholder,
+.formGroup select::placeholder,
+.formGroup textarea::placeholder {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2a857b;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(42, 133, 123, 0.1);
+  transform: translateY(-2px);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.photoUploadSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.photoPreview {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 25px rgba(42, 133, 123, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.photoPreview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(42, 133, 123, 0.25);
+}
+
+.photoPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f0f0, #e6e6e6);
+  color: #555;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.photoInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.75rem;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  border: 1.5px solid #e0e0e0;
+}
+
+.radioOption:hover {
+  background-color: #f0f0f0;
+}
+
+.allergiesSection {
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1.5px solid #e0e0e0;
+}
+
+.allergiesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(42, 133, 123, 0.1);
+  padding-bottom: 1rem;
+}
+
+.allergiesHeader h3 {
+  font-size: 1.2rem;
+  color: #2a857b;
+  font-weight: 600;
+}
+
+.allergyList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.allergyItem {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  align-items: center;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.allergyItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-color: rgba(42, 133, 123, 0.3);
+}
+
+.addAllergyButton {
+  background: linear-gradient(to right, #2a857b, #1d6962);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 10px rgba(42, 133, 123, 0.15);
+}
+
+.addAllergyButton:hover {
+  background: linear-gradient(to right, #236e66, #195751);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(42, 133, 123, 0.2);
+}
+
+.submitButton {
+  background: linear-gradient(to right, #2a857b, #1d6962);
+  color: white;
+  border: none;
+  padding: 1.1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  box-shadow: 0 4px 15px rgba(42, 133, 123, 0.2);
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.submitButton:hover::before {
+  left: 100%;
+}
+
+.submitButton:hover {
+  background: linear-gradient(to right, #236e66, #195751);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(42, 133, 123, 0.3);
+}
+
+.animateFadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .profileFormCard {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    max-width: 95%;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .profileFormTitle {
+    font-size: 1.8rem;
+  }
+  
+  .allergyItem {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .profileCardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profileDetailsCard {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .profileDetailsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .profileDetailsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
