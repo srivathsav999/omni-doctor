@@ -99,20 +99,13 @@ const AppContent = () => {
         <Route path="/signup" element={<><SignUp /><Footer /></>} />
         <Route
           path="/doctors"
-          element={
-            <PrivateRoute>
-              <DoctorsList />
-              <Footer />
-            </PrivateRoute>
-          }
+          element={<><DoctorsList /><Footer /></>}
         />
         <Route
           path="/doctors/:id"
           element={
-            <PrivateRoute>
-              <DoctorPage />
-              <Footer />
-            </PrivateRoute>
+              <><DoctorPage />
+              <Footer /></>
           }
         />
         <Route
